@@ -1,0 +1,15 @@
+---
+layout: "wrapper"
+author: "harshita rajput"
+---
+
+{% for post in site.posts %}
+   <li><a style="{% if page.url == post.url %}color:red;{% endif %}"href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+
+<h1>This is a post.</h1>
+<h3>{{ page.title }}</h3>
+<hr>
+
+{{ content }}
